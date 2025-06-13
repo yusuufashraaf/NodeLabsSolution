@@ -17,3 +17,12 @@ This lab combines two important areas of JavaScript development:
 
 ---
 
+## Sync vs Async File Operations
+
+| **Aspect**           | **Synchronous (Sync)**                     | **Asynchronous (Async)**                       |
+| -------------------- | ------------------------------------------ | ---------------------------------------------- |
+| **Execution**        | Blocking (waits for operation to complete) | Non-blocking (continues other tasks)           |
+| **Complexity**       | Simple                                     | More complex |
+| **Performance**      | Poor for large-scale apps                  | High performance under load                    |
+| **Use Case**         | CLI tools, scripts                         | Web servers, real-time apps                    |
+| **Example Function** | `fs.readFileSync()`                        | `fs.promises.readFile()` or `fs.readFile()`    |
